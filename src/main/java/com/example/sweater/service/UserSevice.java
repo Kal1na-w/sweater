@@ -63,9 +63,8 @@ public class UserSevice implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Sweater. Please, visit next link: http://%s/activate/%s",
+                            "Welcome to Sweater. Please, visit next link: http://http://ec2-52-49-232-185.eu-west-1.compute.amazonaws.com:8080/activate/%s",
                     user.getUsername(),
-                    hostname,
                     user.getActivationCode()
             );
 
